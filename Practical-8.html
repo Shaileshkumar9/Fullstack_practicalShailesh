@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container1
+        {
+            width: 100%;
+            height: 100px;
+            
+        }
+        .container2
+        {
+            width: 100%;
+            height: 300px;
+            
+            display: inline-flex;
+        }
+        .container3
+        {
+            width: 100%;
+            height: 400px;
+            
+            display: inline-flex;
+            box-decoration-break: unset;
+            
+        }
+        .container4
+        {
+            width: 100%;
+            height: 400px;
+            
+            display: inline-flex;
+            box-decoration-break: unset;
+        }
+        .container5
+        {
+            width: 99%;
+            height:4px;
+            background-color: sandybrown;
+            border-radius: 20px;
+            margin: 10px;
+            box-decoration-break: unset;
+            text-align: center;
+           line-height: 8vh;
+        }
+        .container7
+        {
+            width: 99%;
+            height: 720;
+        }
+        .header
+        {
+            width: 99%;
+            height: 70px;
+            background-color: gray;
+            border-radius: 20px;
+            margin: 10px;
+            text-align: center;
+            position: fixed;
+            margin-top: 0px;
+            
+            
+        }
+        .header ul
+        {
+            list-style:none;
+            display:inline-flex;
+        }
+        .header ul li
+        {
+            width: 150px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 8px;
+            margin-bottom: 500px;
+            padding: 15px;
+            
+            
+
+        }
+        .header ul li a
+        {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+        }
+        .header ul li:hover
+        {
+            background-color:goldenrod;
+        }
+        .banner
+        {
+            width: 99%;
+            height: 700px;
+            background-color:gainsboro;
+            border-radius: 20px;
+            padding-bottom: 10px;
+            margin-left: 10px; 
+            background-image: url("https://www.trustedreviews.com/wp-content/uploads/sites/54/2020/10/Surface-Pro-X-2020-3-scaled-e1601550132105.jpg");
+            background-position: center;
+            background-size: cover;
+            
+        }
+       .section1
+       {
+           text-align: center;
+           margin: 20px;
+           font-size: 30px;
+       }
+       .section-2
+       {
+           text-align: center;
+           margin: 20px;
+           font-size: 30px;
+       }
+       .section-3
+       {
+           text-align: center;
+           margin: 20px;
+           font-size: 30px;
+       }
+       .section-4
+       {
+           text-align: center;
+           margin: 20px;
+           font-size: 30px;
+       }
+       .ckl1
+       {
+           width: 290px;
+           height:290px ;
+           background-color:gold;
+           margin: 10px;
+           border-radius: 100%;
+           margin-left: 20px;
+          background-position: center;
+          background-size: cover;
+           background-image: url(https://img.freepik.com/free-photo/portrait-asian-beautiful-happy-young-woman-smiling-cheerful-looking-camera-isolated-yellow-studio-background_33718-1714.jpg?size=626&ext=jpg);
+       }
+       .ckl2
+       {
+           width: 290px;
+           margin: 10px;
+           height:290px ;
+           background-color:gold;
+           border-radius: 50%;
+           margin-left: 30px;
+           background-position: center;
+          background-size: cover;
+          background-image: url(https://image.shutterstock.com/image-photo/portrait-his-he-nice-attractive-260nw-1772016614.jpg); 
+       }
+       .ckl3
+       {
+           width: 290px;
+           height:290px ;
+           background-color: gold;
+           margin: 10px;
+           border-radius: 100%;
+           margin-left: 40px;
+           background-position: center;
+          background-size: cover;
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq0NI6Dz_A1mdbYv-t_dHKpI5zNbJGS1jlwqlfHU6kXvR688TP9vqd-O8ba7AqYo_ooGA&usqp=CAU);
+       }
+       .ckl4
+       {
+           width: 290px;
+           height:290px ;
+           border-radius: 100%;
+           background-color:gold;
+           margin: 10px;
+           margin-left: 60px;
+           background-position: center;
+          background-size: cover;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_tDvxX16h4_cl93uqvvYHhqU1SZkY9ooLRg&usqp=CAU);
+       }
+       .maincontent
+       {
+           width: 50%;
+           height: 380px;
+           margin: 10px;
+           background-color: papayawhip;
+           text-align: center;
+           
+       }
+       .main2
+       {
+        width: 50%;
+           height: 380px;
+           margin: 10px;
+           
+           
+
+       }
+       .artical1
+       {
+           width: 100%;
+           height:125px ;
+           background-color: palevioletred;
+           text-align: center;
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKzjDSLD__R19u9qd5IGg5JPJp2-BFAujG3A&usqp=CAU);
+           background-position: center;
+           background-size: cover;
+           
+       }
+       .artical2
+       {
+           width: 100%;
+           height:125px ;
+           background-color: gold;
+           margin-top: 10px;
+           text-align: center;
+           
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKCFSAsxnL_A7T3R1yCn12YfAsS905XKxUw&usqp=CAU);
+           background-position: center;
+           background-size: cover;
+       }
+       .artical3
+       {
+           width: 100%;
+           height:112px ;
+           background-color: darkmagenta;
+           margin-top: 10px;
+           text-align: center;
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCVKjXyOMh1cbhbXs0HtxcJfcSvp6RMymDA&usqp=CAU);
+           background-position: center;
+           background-size: cover;
+       }
+      
+       h1{
+           color: hotpink;
+           margin-left: 15px;
+           font-family: cursive;
+       }
+       .about
+       {
+           text-align: left;
+           font-family: cursive;
+           color: lightblue;
+       }
+       h3
+    {
+        text-align: center;
+        color: red;
+      
+        
+    
+
+    }
+   
+    #container4
+    {
+        display:inline-flex; 
+        text-align: left;
+        color:royalblue;
+        overflow: hidden;
+        
+        margin: 20px;
+        height: 400px;
+        width: 1310px;
+        
+    }
+    .shailesh
+    {text-align: justify;
+        padding: 10px;
+        margin-right: 20px;
+        margin-top: 20px;
+
+
+
+
+
+    }
+    #box1
+    {
+        text-align: left;
+        color:royalblue;
+        overflow: hidden;
+        
+        
+        margin: 10px;
+        padding: 4px;
+        height: 350px;
+        width: 300px;
+        border: 2px solid red;
+
+    }
+    h5
+    {
+        text-align: center;
+        margin: 8px;
+        background-color: red;
+        border: red solid gray;
+        border-radius: 8px;
+        padding: 5px;
+        padding-top:10px ;
+        margin-top: 13px;
+        padding-bottom:14px ;
+    }
+
+    
+    #box2
+   {
+    text-align: left;
+        color:royalblue;
+        overflow: hidden;
+        
+        margin: 10px;
+        padding: 4px;
+        height: 350px;
+        width: 300px;
+        border: 2px solid red; 
+
+   }
+   p
+   {
+       padding-right: 10px;
+       padding: left 10px; ;
+       text-align: justify;
+       padding-top:4px ;
+   }
+   #box3
+   {
+    text-align: left;
+        color:royalblue;
+        overflow: hidden;
+        
+        margin: 10px;
+        padding: 4px;
+        height: 350px;
+        width: 300px;
+        border: 2px solid red;
+        margin-left: 20px;
+   }
+  
+   #box4
+   {
+    text-align: left;
+        color:royalblue;
+        overflow: hidden;
+        
+        margin: 10px;
+        padding: 4px;
+        height: 350px;
+        width: 300px;
+        border: 2px solid red;
+        margin-left: 35px; 
+   }
+   .ra h5:hover
+   {
+       background-color: green;
+       text-decoration: none;
+   }
+      
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container1" id="sec0">
+        <div class="header">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#sec2">ABOUTUS</a></li>
+                <li><a href="#sec1">TEAM</a></li>
+                <li><a href="#sec3">TECHNOLOGIES</a></li>
+                <li><a href="#sec4">CONTACT</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="container7">
+        <div class="banner">
+            <h1>PRACTICAL-8</h1>
+            
+        </div>
+    </div>
+    <h3 class="section1" id="sec1">TEAM MEMBERS</h3>
+    <div class="container2">
+        <div class="ckl1"></div>
+        <div class="ckl2"></div>
+        <div class="ckl3"></div>
+        <div class="ckl4"></div>
+    </div>
+    <h3 class="section-2" id="sec2">ABOUT PROJECT</h3>
+    <div class="container3">
+        <div class="maincontent">
+            <h1 class="about">About Project</h1>
+            <p style="text-align: justify;margin-top: 15px;padding: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda vero enim commodi voluptate dicta ratione expedita rem libero voluptatum repudiandae dolorem aperiam neque ullam quo nemo at repellendus nihil eius, fuga eum. Consequuntur nam quo necessitatibusm Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam nemo earum exercitationem suscipit? Porro deleniti unde earum tempora voluptatum, magni ad, sequi obcaecati distinctio ab, quos eum harum modi neque veniam excepturi soluta. Esse in iste non Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure quia eum, explicabo, recusandae quisquam qui sed labore natus molestiae delectus nemo? Autem, natus vel tenetur minus iusto facilis, quidem culpa amet consequatur eum ab asperiores accusamus quibusdam illum aspernatur, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita harum maiores vero dolorum? Blanditiis fugiat magni ullam exercitationem quaerat, suscipit quasi voluptatum qui, dolor, expedita dolorum neque! Tempora voluptatem eaque quaerat earum quod consequuntur quibusdam nam culpa corrupti, praesentium dolores porro, fugiat deserunt laboriosam facilis ex. Est, praesentium veniam! saepe nam quia accusantium dignissimos. Sapiente obcaecati nihil voluptas eius. inventore, hic id sint quae, voluptatum culpa, iure eaque blanditiis totam ut. corrupti totam sed possimus quaerat ipsam. Nam qui itaque, commodi magnam atque neque ut.</p>
+        
+            </div>
+        <div class="main2">
+          <div class="artical1">
+              
+          </div>
+           <div class="artical2">
+               
+           </div>
+           <div class="artical3">
+               
+           </div>
+         </div>  
+    </div>
+    <h3 class="section-3"  id="sec3">Technologies Used</h3>
+    <div class="container4">
+        <div class="shailesh" id="box1">
+            <img style="padding-top:10px ; padding-left:10px;padding-right:10px; border-radius: 20px;" src="./Images/Screenshot (26).png" alt="" width="285" height="150">
+            <h3>Introduction to HTML</h3>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequatur ea quae corrupti dolores id ad neque minus eius? Quibusdam debitis illum distinctio dolore error!</p>
+            <a href="./Practical6A.html" class="ra"><h5>Read More</h5></a>  
+        </div>
+        <div class="shailesh" id="box2">
+            <img style="padding-top:10px ; padding-left:10px;padding-right:10px; border-radius: 20px;"  src="./Images/css-6.png" alt="" width="285" height="150" >
+            <h3>Introduction to CSS</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus excepturi ad distinctio iusto, veniam omnis porro! Dolores, cum! Unde commodi ab quibusdam explicabo repellat ipsum.</p>
+            <a href="./Practical6B.html" class="ra"> <h5>Read More</h5></a>
+
+        </div>
+        <div class="shailesh" id="box3">
+            <img style="padding-top:10px ; padding-left:10px;padding-right:10px; border-radius: 20px;"  src="./Images/jquery-6.png" alt="" width="285" height="150">
+            <h3>Introduction to Jquery</h3>
+          
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex iste, quia magnam blanditiis quis obcaecati et fugit neque excepturi cupiditate amet, commodi ipsam veritatis vero.</p>
+           <a  href="./Practical6C.html" class="ra" ><h5>Read More</h5></a>
+
+        </div>
+        <div class="shailesh" id="box4">
+            <img style="padding-top:10px ; font-family: Arial, Helvetica, sans-serif; padding-left:10px;padding-right:10px; border-radius: 20px;"  src="./Images/bootstrap-6.png" alt="" width="285" height="150">
+            <h3>Introduction to Bootstrap</h3> 
+         
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quos ut impedit exercitationem odit eveniet quas obcaecati fugit, alias expedita placeat, quaerat commodi itaque accusantium?</p>    
+             <a  href="./Practical6D.html" class="ra" ><h5>Read More</h5></a> 
+
+        </div>
+    </div>
+    <h3 class="section-4" id="sec4">Contact</h3>
+
+    <div class="container6">
+        <h5><a href="#sec0" style="text-decoration: none;">Go to Top</a></h5>
+
+    </div>
+</body>
+</html>
