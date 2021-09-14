@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <style>
         *
         {
@@ -16,7 +17,8 @@
         .container1
         {
             width: 100%;
-            height: 100px;
+            height: 70px;
+            margin-bottom: 15px;
             
         }
         .container2
@@ -204,6 +206,8 @@
            margin: 10px;
            background-color: papayawhip;
            text-align: center;
+           overflow: hidden;
+           padding-bottom:10px ;
           
            
        }
@@ -261,6 +265,8 @@
            text-align: left;
            font-family: cursive;
            color: lightblue;
+          
+           
        }
        h3
     {
@@ -307,8 +313,24 @@
         height: 350px;
         width: 300px;
         border: 2px solid red;
+       
+            
+        }
 
-    }
+    
+    @media screen and(max-width: 900px)
+        {
+            .box1 
+            {
+                min-width: 400px;
+                min-height:200px;
+                
+
+            }
+
+        }
+            
+        
     h5
     {
         text-align: center;
@@ -375,6 +397,95 @@
        background-color: green;
        text-decoration: none;
    }
+   .show-btn
+   {
+       font-size: 25px;
+       color: white;
+       line-height: 70px;
+       float: right;
+       padding-right: 50px;
+       display: none;
+    
+
+   }
+   .close-btn
+   {
+       float: right;
+       font-size: 25px;
+       line-height: 70px;
+       color: white;
+       display: none;
+   }
+   #chk
+   {
+       
+       visibility:hidden;
+       position: absolute;
+       z-index: -10;
+   }
+   @media(max-width:875px)
+   {
+    .show-btn,.close-btn
+    {
+    display: block;
+    }
+    .container1
+   {
+       display: block;
+       
+   }
+   
+   .menu
+   {
+    position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      text-align: center;
+      padding: 80px,0;
+      transition: 1s;
+      line-height: normal;
+      display: block;
+
+
+   }
+   #chk:checked ~ .menu
+   {
+       right: 0;
+   }
+  
+   .menu li
+   {
+       display: inline-block;
+       padding: 10px,0;
+
+       
+   }
+   .container2 
+   {
+       display: block;
+       height: auto;
+   }
+   .ckl1,.ckl2,.ckl3,.ckl4
+   {
+       margin-left: 280px;
+   }
+   
+   .container4 
+   {
+       display: block;
+       height: auto;
+   }
+   #box1,#box2,#box3,#box4
+   {
+       margin-left: 280px;
+   }
+   
+   
+}
+   
       
 
         
@@ -387,12 +498,23 @@
 <body>
     <div class="container1" id="sec0">
         <div class="header">
-            <ul>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-btn">
+                <i class="fa fa-bars" ></i>
+               
+
+            </label>
+            <ul class="menu">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#sec2">ABOUTUS</a></li>
                 <li><a href="#sec1">TEAM</a></li>
                 <li><a href="#sec3">TECHNOLOGIES</a></li>
                 <li><a href="#sec4">CONTACT</a></li>
+                <label for="chk" class="close-btn">
+                    <i class="fa fa-times" ></i>
+
+                </label>
+               
             </ul>
         </div>
         </div>
@@ -413,7 +535,7 @@
     <div class="container3">
         <div class="maincontent">
             <h1 class="about">About Project</h1>
-            <p style="text-align: justify;margin-top: 15px;padding: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda vero enim commodi voluptate dicta ratione expedita rem libero voluptatum repudiandae dolorem aperiam neque ullam quo nemo at repellendus nihil eius, fuga eum. Consequuntur nam quo necessitatibusm Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam nemo earum exercitationem suscipit? Porro deleniti unde earum tempora voluptatum, magni ad, sequi obcaecati distinctio ab, quos eum harum modi neque veniam excepturi soluta. Esse in iste non Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure quia eum, explicabo, recusandae quisquam qui sed labore natus molestiae delectus nemo? Autem, natus vel tenetur minus iusto facilis, quidem culpa amet consequatur eum ab asperiores accusamus quibusdam illum aspernatur, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita harum maiores vero dolorum? Blanditiis fugiat magni ullam exercitationem quaerat, suscipit quasi voluptatum qui, dolor, expedita dolorum neque! Tempora voluptatem eaque quaerat earum quod consequuntur quibusdam nam culpa corrupti, praesentium dolores porro, fugiat deserunt laboriosam facilis ex. Est, praesentium veniam! saepe nam quia accusantium dignissimos. Sapiente obcaecati nihil voluptas eius. inventore, hic id sint quae, voluptatum culpa, iure eaque blanditiis totam ut. corrupti totam sed possimus quaerat ipsam. Nam qui itaque, commodi magnam atque neque ut.</p>
+            <p style="text-align: justify;margin-top: 15px;padding: 15px; padding-bottom:20px ;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda vero enim commodi voluptate dicta ratione expedita rem libero voluptatum repudiandae dolorem aperiam neque ullam quo nemo at repellendus nihil eius, fuga eum. Consequuntur nam quo necessitatibusm Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam nemo earum exercitationem suscipit? Porro deleniti unde earum tempora voluptatum, magni ad, sequi obcaecati distinctio ab, quos eum harum modi neque veniam excepturi soluta. Esse in iste non Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure quia eum, explicabo, recusandae quisquam qui sed labore natus molestiae delectus nemo? Autem, natus vel tenetur minus iusto facilis, quidem culpa amet consequatur eum ab asperiores accusamus quibusdam illum aspernatur, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita harum maiores vero dolorum? Blanditiis fugiat magni ullam exercitationem quaerat, suscipit quasi voluptatum qui, dolor, expedita dolorum neque! Tempora voluptatem eaque quaerat earum quod consequuntur quibusdam nam culpa corrupti, praesentium dolores porro, fugiat deserunt laboriosam facilis ex. Est, praesentium veniam! saepe nam quia accusantium dignissimos. Sapiente obcaecati nihil voluptas eius. inventore, hic id sint quae, voluptatum culpa, iure eaque blanditiis totam ut. corrupti totam sed possimus quaerat ipsam. Nam qui itaque, commodi magnam atque neque ut.</p>
         
             </div>
         <div class="main2">
@@ -431,7 +553,7 @@
     <h3 class="section-3"  id="sec3">Technologies Used</h3>
     <div class="container4">
         <div class="shailesh" id="box1">
-            <img style="padding-top:10px ; padding-left:10px;padding-right:10px; border-radius: 20px;" src="./Images/Screenshot (26).png" alt="" width="285" height="150">
+            <img class="imga" style="padding-top:10px ; padding-left:10px;padding-right:10px; border-radius: 20px;" src="./Images/Screenshot (26).png" alt="" width="285" height="150">
             <h3>Introduction to HTML</h3>
            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequatur ea quae corrupti dolores id ad neque minus eius? Quibusdam debitis illum distinctio dolore error!</p>
             <a href="./Practical6A.html" class="ra"><h5>Read More</h5></a>  
