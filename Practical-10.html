@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+   
+   <style>
+       *
+       {
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+       }
+
+     .header
+     {
+         width: 100%;
+         height: 70px;
+         background-color:black;
+         
+         position: fixed;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         top: 0;
+     }
+     .header img
+     {
+         width: 70px;
+         height: 70px;
+         margin-right: 15px;
+        
+         
+        
+
+
+     }
+     .header h1{
+         
+         line-height: 70px;
+         color: white;
+
+     }
+     .container
+     {
+        width: 100%;
+        padding: 20px;
+        
+     }
+     .container img{
+         margin-top: 75px;
+         width: 100%;
+         max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+         display: block;
+
+     }
+     .container p{
+         text-align: justify;
+         margin: 10px;
+         padding: 10px;
+     }
+     .sidebar
+     {
+         width: 20%;
+         height: 100%;
+         position: fixed;
+         top: 70px;
+         background-color:black;
+         left: -100%;
+         transition: .4s;
+        
+
+     }
+     .sidebar ul{
+         list-style: none;
+     }
+     .sidebar ul li{
+         
+         border-bottom: 2px solid rgb(204, 185, 185);
+     }
+     .sidebar ul li a{
+        display: block;
+         font-size: 20px;
+         text-decoration: none;
+         color: white;
+         text-align: center;
+         
+         padding: 25px,25px;
+         margin: 10px;
+         margin-right: 60px;
+         transition: .4sec;
+     }
+     .sidebar ul li a i 
+     {
+         margin-right: 20px;
+     }
+     a i {
+         margin-right: 50px;
+     }
+     .sidebar ul li a:hover
+     {
+         border-left: 10px solid white;
+     }
+     .sociallink
+     {
+        margin-top: 280px;
+         display: flex;
+         align-items: center;
+         font-size: 30px;
+         border-bottom: 2px solid rgba(red, green, blue, alpha);
+         border-top:2px solid rgba(red, green, blue, alpha);
+         
+        
+         
+         padding: 15px,20px;
+        
+
+     }
+     i
+     {
+         font-size: 30px;
+         color: white;
+     }
+     .show-btn, .hide-btn
+     {
+         font-size: 35px;
+         position: fixed;
+         color: white;
+         top: 20px;
+         left: 45px;
+     }
+     .hide-btn{
+         opacity: 0;
+     }
+     #chk:checked ~ .sidebar
+     {
+         left: 0px;
+     }
+     #chk:checked ~ .show-btn
+     {
+         opacity: 0;
+     }
+     #chk:checked ~ .hide-btn
+     {
+         opacity: 1;
+     }
+     #chk:checked ~ .container
+     {
+         width: 80%;
+     }
+     @media(max-width:770px)
+     {
+         .sidebar
+         {
+             width: 100%;
+         }
+         .header h1{
+             display:none;
+         }
+     }
+    
+
+   </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq00FUYoWBvzX1uM-dsp5y9uQ77m_UzWSPww&usqp=CAU" alt="">
+        <h1>FULLSTACK</h1>
+    </div>
+    <div class="container">
+        <img src="https://image.shutterstock.com/image-photo/macbook-pro-air-laptop-sitting-260nw-1676218105.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ut consequuntur aliquid voluptates adipisci nemo quae soluta asperiores, neque quidem dolores eos rerum praesentium doloremque quam eveniet. Iusto saepe velit rerum quisquam. Reprehenderit dolores commodi quidem quia soluta magni natus dolorum modi nulla repudiandae. Eos dolore enim expedita tenetur ut, vel exercitationem? Beatae expedita numquam soluta animi nulla perspiciatis ducimus asperiores quasi ipsam sapiente repudiandae omnis quam impedit magnam quod totam consectetur nihil velit, officiis, quidem deserunt! Voluptas voluptatibus, perferendis, asperiores praesentium quo nostrum eveniet, ipsam aspernatur numquam facere ut a nisi exercitationem natus voluptatem! Accusamus odio sequi, harum impedit dolor numquam eaque, dolore illum eius nulla ipsum quaerat ut, aliquid molestiae repudiandae deserunt nam itaque soluta minima sapiente suscipit! Vel nulla eum recusandae assumenda consequuntur nisi minima saepe est ipsa. Optio ab earum nostrum nulla! Placeat maxime nemo harum nihil voluptatibus, excepturi eos praesentium neque quam modi rerum illum, beatae reiciendis voluptate enim! Aliquid sunt nobis quibusdam laboriosam nostrum voluptatem perferendis, dolores aspernatur porro nisi eum. Eligendi, tempora totam quae rerum earum, hic delectus consequatur veritatis recusandae id nihil ullam quo repudiandae impedit natus aliquam ipsa iste, adipisci dicta in. Quos, quis labore ut fugiat minima officiis delectus ullam modi at fugit a. Quaerat quas debitis dolores sunt? Maxime recusandae quia aut ea aperiam laborum tempora quis molestiae sunt, eius quasi expedita error est non dolore vitae earum enim odio. Odio blanditiis enim libero nihil animi consequatur, excepturi ea nostrum vero quos, repellat accusantium culpa, deserunt odit iste assumenda necessitatibus inventore minima eveniet dolor nisi voluptatem non architecto? Ipsa excepturi maiores dolores temporibus blanditiis architecto, voluptatibus vero! Dignissimos iure non corrupti. Dicta, expedita reprehenderit laboriosam corrupti libero recusandae nihil soluta dolore molestias fugiat. Modi, impedit. Iure, quis dolores quae, possimus earum provident cum atque cupiditate nam a rem. Maiores iusto aliquam ut nesciunt ea dolor exercitationem voluptatum. Corrupti ea soluta iure, repudiandae ab magni expedita laborum fugiat delectus debitis, deserunt in iste dolorem pariatur sapiente distinctio rem exercitationem eos et alias dolore. Temporibus, dolor praesentium. Molestias hic aperiam consequuntur. Dignissimos voluptate delectus facilis, porro sunt dolorum reiciendis at distinctio omnis in optio, veniam accusamus fuga, expedita nulla? Dignissimos totam praesentium vitae et modi perspiciatis repudiandae porro, architecto amet explicabo iusto. Quas eaque quibusdam aliquid maxime ut blanditiis eveniet voluptates, inventore a magnam, unde consequatur quam voluptas officia modi doloribus soluta. Dolore, officia saepe tenetur autem esse sapiente tempora perspiciatis ratione ab aspernatur cupiditate. Modi accusamus nam necessitatibus beatae consequatur amet voluptatum voluptatibus aliquam corrupti cupiditate ducimus eius, ipsam, libero ab autem esse consectetur. Vitae corporis error ad adipisci magni debitis doloribus excepturi a, quasi modi sunt. Saepe eveniet quas modi omnis perferendis, cumque in voluptatum officiis eos nostrum, laboriosam optio praesentium vero ut. Optio, nisi mollitia. Iure soluta rerum ut blanditiis ducimus, corporis vero mollitia tempore ipsum. Est repudiandae necessitatibus doloribus maxime et voluptatem obcaecati. Explicabo iste aspernatur asperiores, temporibus velit repellendus? Quibusdam reiciendis adipisci optio ducimus deleniti ab expedita, sunt nulla quo ut id officia mollitia omnis quia!?
+
+        </p>
+    </div>
+    <input type="checkbox" name="" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-times"></i>
+    </label>
+    
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><i class=" fa fa-home"><span style="margin-left: 10px;">Home</span></i></a></li>
+            <li><a href="#"><i class="fa fa-user"><span style="margin-left: 10px;" >About</span></i></a></li>
+            <li><a href="#"><i class="fa fa-tasks"><span style="margin-left: 10px;" >Services</span></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"><span style="margin-left: 10px;">Block</span></i></a></li>
+            <li><a href="#"><i class="fa fa-id-card"><span style="margin-left: 10px;">Contect</span></i></a></li> 
+           
+        </label>
+        </ul>
+        <div class="sociallink">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+</body>
+</html>
