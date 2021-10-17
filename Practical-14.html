@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-14</title>
+    <style>
+        *{
+            padding: 0; margin: 0;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            margin: 20px;
+            font-size: 50px;
+        }
+
+        body{
+           
+            background-color: thistle;
+        }
+        .btn1
+        {
+            margin-left: 400px;
+        }
+        #btn1{
+            margin-left: 440px;
+            margin-top: 40px;
+            padding: 15px;
+            background-color: yellow;
+            
+        }
+        #btn2{
+            margin-left: 230px;
+            margin-top: 40px;
+            padding: 15px;
+            background-color: yellow;
+            
+        }
+        button:hover
+        {
+            background-color: wheat;
+        }
+        .div{
+            display: inline-flex;
+
+        }
+        p{
+            margin-left: 220px;
+            margin-top: 40px;
+            font-size: 40px;
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <div class="div">
+        <button id="btn1" onclick="bton1()" >
+           <h2>-</h2>
+        </button>
+        <p><span id="name">0</span></p>
+        <button id="btn2" onclick="bton2()">
+                 <h2>+</h2>
+        </button>
+    </div>
+    <script>
+        var c=0;
+        function bton1()
+        {
+            if(c>=1)
+            {
+
+            
+              c=c-1;
+            }
+            if(c==0)
+            {
+                document.getElementById("btn1").style.opacity="0";
+                alert("we can not decrease");
+                
+            }
+            document.getElementById("name").innerHTML=c;
+        }
+        function bton2()
+        {
+             c=c+1;
+             if(c>=1)
+             {
+                document.getElementById("btn1").style.opacity="1";   
+             }
+             document.getElementById("name").innerHTML=c; 
+        }
+
+    </script>
+</body>
+</html>
