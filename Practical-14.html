@@ -67,16 +67,17 @@
         var c=0;
         function bton1()
         {
-            if(c>=1)
+            if(c>=0)
             {
 
             
               c=c-1;
             }
-            if(c==0)
+            if(c<0)
             {
                 document.getElementById("btn1").style.opacity="0";
                 alert("we can not decrease");
+                c=0;
                 
             }
             document.getElementById("name").innerHTML=c;
